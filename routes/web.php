@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UserController@index');
+// Route::get('/', function () {
+// });
 
 Route::group(['prefix' => 'user'], function () {
     Route::get('add', 'UserController@create');

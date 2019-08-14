@@ -15,6 +15,8 @@
             <p>{{ \Session::get('success') }}</p>
         </div><br />
         @endif
+        <a href="{{action('UserController@create')}}" class="btn btn-primary bmd-btn-fab">Add User</a>
+        <hr>
         <table class="table table-striped">
             <thead>
                 <tr>
